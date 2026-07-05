@@ -1,11 +1,13 @@
 # bursched
 
+ÖNEMLİ make diyerek derlediğinizde otomatik olarak # ROOT gücünde systemd servisi olarak çalışır.Bunu göze alarak çalıştırınız.Hiçbir profesyonel yapım değildir tamamen hobi yapımıdır.EL YAPIMI DEĞİLDİR
+
 I/O-driven, asenkron bir görev zamanlayıcısı (task scheduler). Bir dizini
 (ve tüm alt dizinlerini) `inotify` ile izler, yeni bir dosya oluştuğunda
 bunu bir POSIX thread havuzuna (worker pool) dağıtır. Ana thread `epoll`
 üzerinde tam blok olur; iş yokken CPU'da ölçülebilir bir iz bırakmaz.
 
-Bağımsız bir projedir; `dfm` ile bir ilgisi yoktur.
+
 
 ## Mimari
 
